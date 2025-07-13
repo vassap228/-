@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Для Насти 💖</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffd6e0, #ffe6f0, #e0c3fc);
+      font-family: 'Comic Sans MS', cursive;
+      color: #ff4081;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: pulse 2s infinite;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    .heart {
+      font-size: 5em;
+      animation: pulse 2s infinite;
+      cursor: pointer;
+    }
+
+    .photo {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+      display: block;
+    }
+
+    #extra {
+      display: none;
+      font-size: 1.2em;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="PHARAOH_-_Odnim_celym_47828832.mp3" type="audio/mpeg">
+    Твой браузер не поддерживает музыку 😢
+  </audio>
+
+  <div class="heart" id="heart">💖</div>
+  <h1>Привет, моя любимая Настя!</h1>
+
+  <img src="photo_2025-07-14_00-35-03.jpg" alt="Фото с Настей" class="photo">
+
+  <p>Ты самая лучшая девушка! Я тебя очень сильно люблю и ценю. Спасибо за то, что ты у меня есть!</p>
+  <p>Я тебя люблю! 😘</p>
+  <p id="extra">Ты делаешь меня счастливым каждый день!</p>
+
+  <script>
+    document.getElementById('heart').onclick = function () {
+      document.getElementById('extra').style.display = 'block';
+    };
+  </script>
+
+</body>
+</html>
